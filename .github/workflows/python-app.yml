@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
       - name: Checkout repo
@@ -25,4 +25,4 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run script
-        run: python svm_test.py
+        run: python svm.py
